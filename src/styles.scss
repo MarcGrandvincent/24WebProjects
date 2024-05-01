@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use '../src/assets/themes/default-theme.scss' as theme;
+
+@include mat.all-component-themes(theme.$theme);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #main {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(70deg,#EAE9F8, #E7E3EA);
+}
+
+
+h1, h2, h3, h4, h5, h6, p, span, button[mat-button], label, mat-label, mat-hint, a {
+  font-family: Arial, sans-serif;
+}

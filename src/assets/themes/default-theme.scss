@@ -1,0 +1,28 @@
+@use '@angular/material' as mat;
+@use '@angular/material/core/theming/_theming.scss' as mat-theming;
+
+$primary-palette: (
+  50: Ff5807E,
+  100: #F76A68,
+  200: #FA5855,
+  contrast: (
+    100: white,
+    200: white
+  )
+);
+
+$wood-palette: (
+  50: #D5B185,
+  100: #CA9E67,
+  200: #B68E5D,
+  contrast: (
+    100: white,
+    200: white,
+  )
+);
+
+$primary: mat.define-palette($primary-palette, 100, 50, 200);
+$accent: mat.define-palette($wood-palette, 100, 50, 200);
+
+// Create the Material theme object
+$theme: mat.define-light-theme($primary, $accent);
