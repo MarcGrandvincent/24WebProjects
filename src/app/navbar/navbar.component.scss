@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  height: 10%;
+
+  .title {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+
+    img {
+      margin-bottom: 5px;
+      max-width: 64px;
+      max-height: 64px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    user-select: none;
+  }
+
+  .button-wrapper {
+
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+
+    .classic-button {
+      font-size: 16px;
+      padding: 16px 24px;
+      border-radius: 5px;
+      background-color: #3C3C3C;
+      color: white;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #4a4a4a;
+      }
+    }
+  }
+
+}
