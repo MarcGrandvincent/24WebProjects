@@ -1,4 +1,5 @@
 export enum RoutePath {
   index = "index",
-  detail = "detail"
+  detail = "detail",
+  route = "route",
 }

@@ -96,7 +96,10 @@
 
   span {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 27px;
+    display: block;
+    border-bottom: 2px white solid;
+    padding-bottom: 10px;
   }
 }
 
@@ -139,6 +142,7 @@
   flex-direction: row;
   width: 100%;
   justify-content: center;
+  padding-bottom: 10px;
   h3{
     text-align:right;
 
