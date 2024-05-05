@@ -3,6 +3,7 @@ import {RoutePath} from "./navigation/route.path";
 import {IndexComponent} from "./index/index.component";
 import {DetailComponent} from "./detail/detail.component";
 import {RouteComponent} from "./route/route.component";
+import {PasswordComponent} from "./password/password.component";
 
 export const routes: Routes = [
   {
@@ -16,6 +17,10 @@ export const routes: Routes = [
   {
     path: RoutePath.route,
     component: RouteComponent,
+  },
+  {
+    path: RoutePath.password,
+    component: PasswordComponent,
   },
   { path: '', redirectTo: RoutePath.index, pathMatch: 'full' },
   { path: '**', redirectTo: RoutePath.index, pathMatch: 'full' }

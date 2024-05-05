@@ -3,6 +3,8 @@ import {MatToolbar} from "@angular/material/toolbar";
 import {MatRipple} from "@angular/material/core";
 import {Router} from "@angular/router";
 import {RoutePath} from "../navigation/route.path";
+import {MatDialog, MatDialogRef} from "@angular/material/dialog";
+
 
 @Component({
   selector: 'app-navbar',
@@ -16,6 +18,10 @@ import {RoutePath} from "../navigation/route.path";
 })
 export class NavbarComponent {
   constructor(private router : Router) {
+  }
+
+  goToPassword() {
+    this.router.navigateByUrl(RoutePath.route)
   }
 
   goToIndex() {

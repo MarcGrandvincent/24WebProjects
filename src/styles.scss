@@ -21,3 +21,44 @@ body {
 h1, h2, h3, h4, h5, h6, p, span, button[mat-button], label, mat-label, mat-hint, a {
   font-family: Arial, sans-serif;
 }
+
+$warning-palette: (
+  50: #FFE3AA,
+  100: #FFAB00,
+  200: #E57D00
+);
+
+$alert-palette: (
+  50: #FFBEAA,
+  100: #FF3D00,
+  200: #CC3100
+);
+
+$success-palette: (
+  50: #B9EAA9,
+  100: #00C853,
+  200: #008537
+);
+
+.mat-mdc-snack-bar-container {
+  &.warn .mdc-snackbar__surface {
+    background-color: mat.get-color-from-palette($warning-palette, 100);
+  }
+
+  &.alert .mdc-snackbar__surface {
+    background-color: mat.get-color-from-palette($alert-palette, 100);
+  }
+
+  &.error .mdc-snackbar__surface {
+    background-color: mat.get-color-from-palette($alert-palette, 200);
+  }
+
+  &.success .mdc-snackbar__surface {
+    background-color: mat.get-color-from-palette($success-palette, 100);
+  }
+}
+
+
+::ng-deep .bg-color .mat-dialog-container{
+  background-color: #1D1D1D !important;
+}
