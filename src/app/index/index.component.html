@@ -44,3 +44,26 @@
   </div>
 </div>
 
+
+<div class="contenaireCard">
+  @if (isLoading) {
+    <mat-spinner></mat-spinner>
+  }
+  @else {
+    @for (pirate of pirates; track $index) {
+      <div class="presentation_card">
+        <img src="assets/images/CardIndex/{{$index}}.png" alt="photo du pirate">
+        <p>{{pirate.description}}</p>
+        <div class="separation">
+          <div class="birth_death">
+            <h3>{{pirate.birth}}</h3>
+            <h3> - </h3>
+            <h3>{{pirate.death}}</h3>
+          </div>
+          <h2>{{pirate.name}}</h2>
+        </div>
+      </div>
+
+    }
+  }
+</div>
