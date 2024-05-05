@@ -1,9 +1,13 @@
 import { Component, HostListener, ElementRef, AfterViewInit } from '@angular/core';
+import {NavbarComponent} from "../navbar/navbar.component";
 
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
   standalone: true,
+  imports: [
+    NavbarComponent
+  ],
   styleUrls: ['./detail.component.scss']
 })
 export class DetailComponent implements AfterViewInit {
