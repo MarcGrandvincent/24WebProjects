@@ -70,3 +70,19 @@
     }
   }
 }
+.sousBlocPartenaire{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+  img{
+    width: 100px;
+    height: 100px;
+  }
+}
+.blocPartenaire{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #FFB800;
+}
