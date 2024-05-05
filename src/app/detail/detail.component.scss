@@ -1,0 +1,47 @@
+.blocDetail
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.sousBlocDetail
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  padding-top: 3%;
+}
+
+.textDetail
+{
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  text-align: center;
+
+  h2{
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 36px ;
+    span{
+      color: #FFB800;
+    }
+  }
+  p{
+    font-size: 24px;
+    color: #999999;
+  }
+}
+
+.imageDetail
+{
+  width: 45%;
+  img{
+  }
+}
+.paddingRight{
+  margin-right: 10%;
+}
