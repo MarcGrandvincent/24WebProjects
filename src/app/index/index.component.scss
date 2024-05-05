@@ -1,5 +1,5 @@
 .presentation {
-
+  margin-bottom: 80px;
   .logo {
     position: absolute;
     top: 0;
@@ -81,9 +81,21 @@
   }
 }
 .blocPartenaire{
-  margin-top: 132px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  text-align: center;
   background: #FFB800;
+}
+
+.partenaire {
+  padding-top: 10px;
+  color:white;
+  text-align: center;
+  background: #FFB800;
+
+  span {
+    font-weight: bold;
+    font-size: 18px;
+  }
 }
