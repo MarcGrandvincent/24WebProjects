@@ -3,18 +3,18 @@
 
 $primary-palette: (
   50: Ff5807E,
-  100: #F76A68,
-  200: #FA5855,
+  100: white,
+  200: white,
   contrast: (
-    100: white,
-    200: white
+    100: black,
+    200: black
   )
 );
 
-$wood-palette: (
-  50: #D5B185,
-  100: #CA9E67,
-  200: #B68E5D,
+$dark-palette: (
+  50: #1D1D1D,
+  100: #1D1D1D,
+  200: #1D1D1D,
   contrast: (
     100: white,
     200: white,
@@ -22,7 +22,7 @@ $wood-palette: (
 );
 
 $primary: mat.define-palette($primary-palette, 100, 50, 200);
-$accent: mat.define-palette($wood-palette, 100, 50, 200);
+$accent: mat.define-palette($dark-palette, 100, 50, 200);
 
 // Create the Material theme object
 $theme: mat.define-light-theme($primary, $accent);

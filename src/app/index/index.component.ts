@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import {NavbarComponent} from "../navbar/navbar.component";
 
 @Component({
-  selector: 'app-test-page-two',
+  selector: 'app-index',
   standalone: true,
   imports: [
     NavbarComponent
   ],
-  templateUrl: './test-page-two.component.html',
-  styleUrl: './test-page-two.component.scss'
+  templateUrl: './index.component.html',
+  styleUrl: './index.component.scss'
 })
-export class TestPageTwoComponent {
+export class IndexComponent {
 
 }
