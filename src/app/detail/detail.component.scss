@@ -16,11 +16,11 @@
 }
 
 .sousBlocDetail.visible {
-  animation: slideInRight 2s ease-in-out;
+  animation: slideInRight 1s ease-in-out;
 }
 
 .sousBlocDetail.reverse.visible {
-  animation: slideInLeft 2s ease-in-out;
+  animation: slideInLeft 1s ease-in-out;
 }
 
 @keyframes slideInRight {
