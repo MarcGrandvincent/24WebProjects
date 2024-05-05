@@ -1,6 +1,9 @@
 import {MatSnackBar, MatSnackBarConfig} from "@angular/material/snack-bar";
-import {NgZone} from "@angular/core";
+import {Injectable, NgZone} from "@angular/core";
 
+@Injectable({
+  providedIn: 'root'
+})
 export class NotificationService {
   constructor(
     public snackBar: MatSnackBar,

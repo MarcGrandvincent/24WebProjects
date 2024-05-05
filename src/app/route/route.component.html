@@ -1,26 +1,47 @@
 <app-navbar></app-navbar>
-<div class="routeInput">
-  <label for="route">Recherche de route :</label>
-  <input placeholder="Saisissez la route" id="route" name="route" type="text">
-  <button>
-    <mat-icon>search</mat-icon>
-  </button>
+
+<div class="wrapper">
+  @for(route of routes; track route.seller;) {
+    <div class="card">
+      <span class="title">Route {{routes.indexOf(route) + 1}} :</span>
+      <div class="row">
+        <div class="align">
+          <span>Vendeur : </span>
+          <mat-icon>person</mat-icon>
+          <span>{{route.seller}}</span>
+        </div>
+
+        <div class="align">
+          <span>Marchandise : </span>
+          <mat-icon>shopping_cart</mat-icon>
+          <span>{{route.cargo}}</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="align">
+          <span>Départ : </span>
+          <mat-icon>start</mat-icon>
+          <span>{{route.start}}</span>
+        </div>
+
+        <div class="align">
+          <span>Arrivée : </span>
+          <mat-icon>flag</mat-icon>
+          <span>{{route.end}}</span>
+        </div>
+      </div>
+      <div class="schedule">
+        <span class="s-title">Disponibilité : </span>
+        <div class="caca">
+          <mat-chip-listbox>
+            @for(schedule of schedule[$index]; track $index){
+              <mat-chip-option [selected]="isReserved(route.seller, schedule)" (click)="reserve(route.seller, schedule)">{{schedule}}</mat-chip-option>
+            }
+          </mat-chip-listbox>
+        </div>
+
+      </div>
+    </div>
+  }
 </div>
-<div class="resultRoute">
-  <div>
-    <h2>Seller</h2>
-    <p>Christofle Delcroix</p>
-  </div>
-  <div>
-    <h2>Start</h2>
-    <p>Port Royal</p>
-  </div>
-  <div>
-    <h2>End</h2>
-    <p>New York</p>
-  </div>
-  <div>
-    <h2>Cargo</h2>
-    <p>Epices et produits de luxe</p>
-  </div>
-</div>
+

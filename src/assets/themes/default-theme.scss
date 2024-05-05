@@ -1,5 +1,6 @@
 @use '@angular/material' as mat;
 @use '@angular/material/core/theming/_theming.scss' as mat-theming;
+@use 'sass:map';
 
 $primary-palette: (
   50: Ff5807E,
