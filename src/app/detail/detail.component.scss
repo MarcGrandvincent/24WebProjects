@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 5%;
+  margin-inline: 8%;
 }
 
 .sousBlocDetail.visible {
@@ -66,12 +67,14 @@
   }
 }
 
-.imageDetail
+.imgDetail
 {
   width: 45%;
   img{
     width: 100%;
     height: auto;
+    max-height: 450px;
+    max-width: 450px;
   }
 }
 .paddingRight{
