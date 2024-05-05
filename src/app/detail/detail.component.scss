@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 5%;
+  padding-bottom: 5%;
   margin-inline: 8%;
 }
 
@@ -75,6 +76,10 @@
     height: auto;
     max-height: 450px;
     max-width: 450px;
+  }
+  img:hover{
+    transform: scale(1.05);
+    animation: 1s linear;
   }
 }
 .paddingRight{
